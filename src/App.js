@@ -1,16 +1,21 @@
-import logo from './logo.svg';
+
+import CommingSoon from './CommingSoon';
 import './App.css';
+import UnderMaintenance from './UnderMaintenance';
+
+const COMMING_SOON = 'comming_soon'
+const UNDER_MAINTENANCE = 'under_maintenanta'
+const SELECTED_INTERFACE = COMMING_SOON
+
+function Greeting() {
+  switch (SELECTED_INTERFACE) {
+    case COMMING_SOON: return <CommingSoon/>
+    case UNDER_MAINTENANCE: return <UnderMaintenance />
+  }
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Erebor Dapp</h1>
-        <p>Comming soon ...</p>
-      </header>
-    </div>
-  );
+  return (Greeting())
 }
 
 export default App;
