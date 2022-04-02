@@ -1,21 +1,16 @@
 
-import CommingSoon from './CommingSoon';
 import './App.css';
-import UnderMaintenance from './UnderMaintenance';
-
-const COMMING_SOON = 'comming_soon'
-const UNDER_MAINTENANCE = 'under_maintenanta'
-const SELECTED_INTERFACE = COMMING_SOON
-
-function Greeting() {
-  switch (SELECTED_INTERFACE) {
-    case COMMING_SOON: return <CommingSoon/>
-    case UNDER_MAINTENANCE: return <UnderMaintenance />
-  }
-}
+import Layout from './Layout';
 
 function App() {
-  return (Greeting())
+  return (
+
+    <div className='App'>
+      <div className="fixed h-full w-full bg-[#282c34]">
+        <Layout />
+      </div>
+    </div>
+  )
 }
 
 export default App;
