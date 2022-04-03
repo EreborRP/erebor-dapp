@@ -1,6 +1,6 @@
 import React from 'react'
-import logo from './logo.svg';
-import discord from './discord.svg'
+import logo from '../assets/logo.svg';
+import discord from '../assets/discord.svg'
 
 // eslint-disable-next-line no-unused-vars
 const UNDERGOING_MAINTENANGE = 'We are performing undergoing maintenance ...'
