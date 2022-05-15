@@ -1,5 +1,5 @@
 import React from 'react'
-import EventEmitter from '../../utils/EventEmitter'
+import EventEmitter from '../../Services/Utils/EventEmitter';
 import MaiarAppLogin from './MaiarApp/MaiarAppLogin';
 
 function closeModal() {

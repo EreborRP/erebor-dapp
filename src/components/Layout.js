@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import EventEmitter from '../utils/EventEmitter'
 import AppLayout from './AppContent'
-import Footer from './Footer'
+import Footer from '../Layouts/Footer/index'
 import Greeting from './Greeting'
 import WalletConnectChooseModal from './Modals/WalletConnectChooseModal'
 import WalletConnectionHub from './WalletConnection/WalletConnectionHub'
 
-const SHOULD_DISPLAY_GREETING = false
+const SHOULD_DISPLAY_GREETING = true
 
 function LayoutToDisplay() {
     if (SHOULD_DISPLAY_GREETING) {
